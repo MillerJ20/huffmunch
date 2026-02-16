@@ -64,7 +64,7 @@ appendix = [
     ]
 
 paragraphs = []
-for line in open("danger.txt","rt").readlines()[3:]:
+for line in open("full_en.txt","rt").readlines()[3:]:
     l = line.rstrip();
     if l == "":
         paragraphs.append([])
@@ -131,5 +131,5 @@ try:
 except FileExistsError:
     pass
     
-open(OUTDIR+"danger.bin","wb").write(b)
-open(OUTDIR+"danger.lst","wt").write(s)
+open(OUTDIR+"full.bin","wb").write(b)
+open(OUTDIR+"full.lst","wt").write(s)
